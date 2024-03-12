@@ -7,12 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
-
-
-    // Función para el desplazamiento suave al hacer clic en los enlaces de la barra de navegación
   
-  
-
 
     // Manejo del evento submit del formulario de contacto
    

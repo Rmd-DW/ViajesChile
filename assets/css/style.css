@@ -6,8 +6,6 @@ definiendo notoriamente el aspecto visual del documento.
 estilos de fuente.
 ● El código debe estar ordenado, documentado e indentado */
 /* Estilos generales para resetear márgenes, paddings y bordes de todos los elementos */
-
-
 /* reset estilos predeterminados */
 * {
     margin: 0;
@@ -18,12 +16,12 @@ estilos de fuente.
 /* smooth scroll */
 html {
     scroll-behavior: smooth;
-  }
+}
 
 /* Estilo básico del cuerpo de la página */
 body {
-    background-color: #32393a; 
-    font-family: "Urbanist", sans-serif; 
+    background-color: #2c3336;
+    font-family: "Urbanist", sans-serif;
 }
 
 /* Estilos para la barra de navegación */
@@ -35,9 +33,9 @@ nav {
     z-index: 1020;
 }
 
-.nav-dis{
-display: flex;
-justify-content: flex-end;
+.nav-dis {
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -49,34 +47,41 @@ ul {
 /* Estilo de los elementos de lista */
 li {
     display: inline;
-    list-style: none; 
-    margin: 0 10px; 
+    list-style: none;
+    margin: 0 10px;
 }
 
 /* Estilo de los enlaces */
-.a-link{
-    color: white; 
-    text-decoration: none; 
-    font-size: 21px; 
+.a-link {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
 }
 
 /* Estilos para encabezados h1, h2, y h6 */
-h1, h2, h6 {
-    margin: 5px; 
-    padding: 5px; 
-}
-h1, h2 {
-    color: #ffffff; 
-}
-h1 {
-    font-size: 46px; 
-}
-h2 {
-    font-size: 41px; 
-}
+h1,
+h2,
 h6 {
-    font-size: 24px; 
-    color: #0DCAF0; 
+    margin: 5px;
+    padding: 5px;
+}
+
+h1,
+h2 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 41px;
+}
+
+h6 {
+    font-size: 24px;
+    color: #0DCAF0;
     font-weight: bold;
     font-style: oblique;
 }
@@ -85,89 +90,94 @@ h6 {
 
 /* Estilo general para las secciones */
 section {
-    margin: 30px; 
-    padding: 20px; 
-    text-align: center; 
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Estilo básico para div */
 div {
-    padding: 10px; 
-    margin: 5px; 
+    padding: 10px;
+    margin: 5px;
 }
 
 /* Estilos específicos para secciones presentación / destacados */
-.section-presentacion-content, .section-destacados-cards {
+.section-presentacion-content,
+.section-destacados-cards {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
 
-.section-presentacion-content{
+.section-presentacion-content {
     flex: 1;
-    padding: 5px; 
+    padding: 5px;
     margin: 10px;
-    background-color: #6393A6; 
+    background-color: #6393A6;
 }
- 
 
+.card {
+
+    background-color: #0e4358;
+    color: #ffffff;
+}
 
 /* Estilos para formularios */
 form {
-    background-color: #f0f0f0; 
-    padding: 20px; 
-    border-radius: 10px; 
-    margin-top: 20px; 
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 form label {
-    display: block; 
-    margin-bottom: 5px; 
+    display: block;
+    margin-bottom: 5px;
 }
 
 form input[type="text"],
 form textarea {
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form textarea {
-    resize: none; 
+    resize: none;
 }
 
 form button {
-    background-color: #11a7e2; 
-    color: white; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    background-color: #11a7e2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #4c7b8b; 
+    background-color: #4c7b8b;
 }
 
 
-/* Estilo del pie de página */
+/* Estilo del footer */
 footer {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    background-color: #274f5f;
-    padding: 0 30px; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e4358;
+    padding: 0 30px;
 }
 
 /* Estilo de los iconos */
 i {
-    font-size: 40px; 
-    margin: 5px; 
-    padding: 5px; 
-    color: #0DCAF0; 
-    opacity:100% ;
+    font-size: 40px;
+    margin: 5px;
+    padding: 5px;
+    color: #0DCAF0;
+    opacity: 100%;
 }
