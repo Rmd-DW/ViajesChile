@@ -1,98 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Viajes Chile</title>
+    </head>
+    
+    <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes chile</title>
-
-</head>
-
-<body>
-    <header>
-        <nav>
-            <!--  Una barra de navegación fija en la parte superior de la pantalla, con el logo y links a
-                    diferentes secciones de la página, haciendo un smooth scroll. -->
-            <div class="cont-logo">
-                <img src="./assets/img/viajes.svg" alt="logo">
-             </div>
-           
-            <div>
-                <li>
-                    <lu><a href="">Inicio</a></lu>
-                    <lu><a href="">Quienes somos</a></lu>
-                    <lu><a href="">Destacados</a></lu>
-                    <lu><a href="">Contacto</a></lu>
-                </li>
-            </div>
-        </nav>
-
-
-    </header>
+        <header id="inicio">
+            <nav>
+                <!--  Una barra de navegación fija en la parte superior de la pantalla, con el logo y links a
+                        diferentes secciones de la página, haciendo un smooth scroll. -->
+                <div class="cont-logo">
+                    <img src="./assets/img/viajes.svg" alt="logo" width="80px">
+                </div>
+    
+                <div>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#presentacion">Quienes somos</a></li>
+                        <li><a href="#destacados">Destacados</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+    
+        </header>
 
     <main>
-        <section class="section-presentación">
+        <section id="presentacion"  class="section-presentacion">
             <!-- Una sección de presentación, utilizando favicons y 3 párrafos (debe desaparecer en
             tamaños pequeños de pantalla). -->
-
+              
             <h1>¿Quienes somos?</h1>
-            <div>
+            <div class="section-presentacion-content" >
+
+          
+            <div >
+                <i class="fa-solid fa-plane"></i>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, culpa doloribus quo aliquid id iure
                     non quis quisquam sint facere sequi, laudantium inventore. Laudantium maxime laboriosam, inventore
                     accusantium facilis reprehenderit?</p>
             </div>
             <div>
+                <i class="fa-solid fa-mountain"></i>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio impedit commodi alias
                     dignissimos animi maxime totam ab similique modi nisi laudantium nostrum, cum, illo nulla rerum
                     possimus corporis fuga.</p>
             </div>
             <div>
+                <i class="fa-solid fa-route"></i>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, molestiae minus. Itaque enim
                     laudantium accusantium maxime placeat adipisci ipsam, blanditiis quisquam, ratione eum
                     exercitationem quae ut, cupiditate et quidem sequi.</p>
             </div>
+        </div>
         </section>
 
-        <section class="section-destacados">
+        <section id="destacados" class="section-destacados">
             <!-- Un carousel que muestre las imágenes destacadas del sitio. -->
             <!-- Una sección de destacados, que muestre 4 cards (tarjetas) con la imagen e
          información asociada. -->
 
-         <h2>Destacados</h2>  
-            <div>
+            <h2>Destacados</h2>
+            <div class="section-destacados-cards">
+
+         
+            <div class="dest-card">
                 <img src="./assets/img/card1.jpg" alt="targeta1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
             </div>
-            <div>
+            <div class="dest-card">
                 <img src="./assets/img/card2.jpg" alt="targeta2">
-            </div>
-            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
+
+            </div class="dest-card">
+            <div class="dest-card">
                 <img src="./assets/img/card3.jpg" alt="targeta3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
+
             </div>
-            <div>
+            <div class="dest-card">
                 <img src="./assets/img/card4.jpg" alt="targeta4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
             </div>
+        </div>
         </section>
 
-        <section class="section-contacto">
+        <section id="contacto"  class="section-contacto">
             <!-- Una sección de formulario de contacto. -->
-            <h2>Contacto</h2>  
+            <div>
+                <h2>Contacto</h2>
+            </div>
+            
+             
+             <div>
+                <form action="">
+                    <label for="">Nombre</label>
+                    <input type="text">
+                    <label for="">Asunto</label>
+                    <input type="text">
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button>Enviar</button>
+                </form>
+             </div>
+            
 
         </section>
     </main>
 
     <footer>
         <!-- Una sección footer con links a las redes sociales. -->
-       <p>viajes Chile</p>   
-       <div class="social-icons">
+        <div>
+            <h6>VIAJES CHILE</h6>
+        </div>
+     
+        <div class="social-icons">
 
-        <i class="fa-brands fa-square-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-        <i class="fa-brands fa-square-facebook"></i>
-   
-       </div>
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+
+        </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/7a12caaa16.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

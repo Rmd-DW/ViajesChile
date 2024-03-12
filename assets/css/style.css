@@ -1,0 +1,174 @@
+/* Componer visualmente el documento HTML con propiedades CSS.
+(2 Puntos)
+● Aplicar la sintaxis de CSS utilizando selectores y clases de manera correcta,
+definiendo notoriamente el aspecto visual del documento.
+● Utilizar recursos externos como Google Fonts y Font Awesome, para definir
+estilos de fuente.
+● El código debe estar ordenado, documentado e indentado */
+
+ * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #32393a;
+    font-family: "Urbanist", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+ul {
+   
+    padding: 0;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+h1 {
+    font-size: 46px;
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 41px;
+    margin: 5px;
+    padding: 5px;
+}
+h6 {
+    font-size: 28px;
+    margin: 5px;
+    padding: 5px;
+color:#4ceb0e;
+}
+
+header {
+    background-image: url(../img/carousel1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+section {
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+div {
+    padding: 10px;
+    margin: 5px;
+}
+
+.section-presentacion {
+    text-align: center;
+}
+
+.section-presentacion-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-presentacion-content div {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    background-color: #6393A6;
+}
+
+.section-destacados {
+    text-align: center;
+}
+
+.section-destacados-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.section-destacados-cards img {
+    width: 250px;
+    height: 200px;
+}
+
+.dest-card {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #e2e9ec;
+}
+
+form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: none; /* Evita que el textarea sea redimensionable */
+}
+
+form button {
+    background-color: #6393A6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4c7b8b;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6393A6;
+    padding: 0 30px;
+}
+
+i {
+    font-size: 40px;
+    margin: 5px;
+    padding: 5px;
+    color:#4ceb0e;
+}
