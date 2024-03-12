@@ -1,107 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Viajes Chile</title>
-    </head>
-    
-    <body>
 
-        <header id="inicio">
-            <nav>
-                <!--  Una barra de navegación fija en la parte superior de la pantalla, con el logo y links a
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Viajes Chile</title>
+</head>
+
+<body>
+    <!--  Una barra de navegación fija en la parte superior de la pantalla, con el logo y links a
                         diferentes secciones de la página, haciendo un smooth scroll. -->
-                <div class="cont-logo">
-                    <img src="./assets/img/viajes.svg" alt="logo" width="80px">
-                </div>
-    
-                <div>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#presentacion">Quienes somos</a></li>
-                        <li><a href="#destacados">Destacados</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
-    
-    
-        </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container-fluid">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/viajes.svg" alt="logo" width="80">
+            </a>
 
-    <main>
-        <section id="presentacion"  class="section-presentacion">
+            <!-- Toggle button  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link a-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a-link" href="#presentacion">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a-link" href="#destacados">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="inicio" class="container-fluid m-0 p-0">
+        <!-- Carrusel de imágenes destacadas -->
+        <div id="carouselDestacados" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen destacada 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="Imagen destacada 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen destacada 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </header>
+
+
+    <main class="container-fluid">
+
+        <section id="presentacion" class="container section-presentacion">
             <!-- Una sección de presentación, utilizando favicons y 3 párrafos (debe desaparecer en
             tamaños pequeños de pantalla). -->
-              
+
             <h1>¿Quienes somos?</h1>
-            <div class="section-presentacion-content" >
 
-          
-            <div >
-                <i class="fa-solid fa-plane"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, culpa doloribus quo aliquid id iure
-                    non quis quisquam sint facere sequi, laudantium inventore. Laudantium maxime laboriosam, inventore
-                    accusantium facilis reprehenderit?</p>
+
+            <div class="container t">
+                <div class="row">
+                    <div class="col  section-presentacion-content">
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, culpa doloribus quo aliquid
+                            id
+                            iure
+                            non quis quisquam sint facere sequi, laudantium inventore. Laudantium maxime laboriosam,
+                            inventore
+                            accusantium facilis reprehenderit?</p>
+                    </div>
+                    <div class="col section-presentacion-content">
+                        <i class="fa-solid fa-mountain"></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio impedit
+                            commodi
+                            alias
+                            dignissimos animi maxime totam ab similique modi nisi laudantium nostrum, cum, illo nulla
+                            rerum
+                            possimus corporis fuga.</p>
+                    </div>
+                    <div class="col section-presentacion-content">
+                        <i class="fa-solid fa-route"></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, molestiae minus. Itaque
+                            enim
+                            laudantium accusantium maxime placeat adipisci ipsam, blanditiis quisquam, ratione eum
+                            exercitationem quae ut, cupiditate et quidem sequi.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-mountain"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio impedit commodi alias
-                    dignissimos animi maxime totam ab similique modi nisi laudantium nostrum, cum, illo nulla rerum
-                    possimus corporis fuga.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-route"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, molestiae minus. Itaque enim
-                    laudantium accusantium maxime placeat adipisci ipsam, blanditiis quisquam, ratione eum
-                    exercitationem quae ut, cupiditate et quidem sequi.</p>
-            </div>
-        </div>
         </section>
 
-        <section id="destacados" class="section-destacados">
-            <!-- Un carousel que muestre las imágenes destacadas del sitio. -->
-            <!-- Una sección de destacados, que muestre 4 cards (tarjetas) con la imagen e
-         información asociada. -->
-
-            <h2>Destacados</h2>
-            <div class="section-destacados-cards">
-
-         
-            <div class="dest-card">
-                <img src="./assets/img/card1.jpg" alt="targeta1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
+        <section id="destacados" class="section-destacados mt-5">
+        <div class="container-fluid">
+        <h2 class="text-center mb-5">Destacados</h2>
+        <!-- Tarjetas destacadas -->
+        <div class="row  g-1">
+            <div class="col mb-4">
+                <div class="card ">
+                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
             </div>
-            <div class="dest-card">
-                <img src="./assets/img/card2.jpg" alt="targeta2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
-
-            </div class="dest-card">
-            <div class="dest-card">
-                <img src="./assets/img/card3.jpg" alt="targeta3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
-
+            <div class="col mb-4">
+                <div class="card ">
+                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
             </div>
-            <div class="dest-card">
-                <img src="./assets/img/card4.jpg" alt="targeta4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque recusandae corporis deserunt distinctio voluptate ipsam dolores explicabo autem modi, veritatis, amet saepe perspiciatis aperiam dolorem. Eum at placeat quaerat!</p>
+            <div class="col mb-4">
+                <div class="card ">
+                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        </section>
+    </div>
+</section>
 
-        <section id="contacto"  class="section-contacto">
+
+        <section id="contacto" class="section-contacto">
             <!-- Una sección de formulario de contacto. -->
             <div>
                 <h2>Contacto</h2>
             </div>
-            
-             
-             <div>
+
+
+            <div>
                 <form action="">
                     <label for="">Nombre</label>
                     <input type="text">
@@ -111,10 +180,12 @@
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <button>Enviar</button>
                 </form>
-             </div>
-            
+            </div>
+
 
         </section>
+
+
     </main>
 
     <footer>
@@ -122,18 +193,19 @@
         <div>
             <h6>VIAJES CHILE</h6>
         </div>
-     
-        <div class="social-icons">
 
+        <div class="social-icons">
             <i class="fa-brands fa-square-github"></i>
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-square-twitter"></i>
             <i class="fa-brands fa-square-facebook"></i>
-
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/7a12caaa16.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
