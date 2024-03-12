@@ -31,11 +31,22 @@ nav {
     align-items: center;
     padding: 0 30px;
     z-index: 1020;
+   
 }
+
+.navbar{
+    background: rgba(104, 177, 219, 0.3);
+ -webkit-backdrop-filter: blur(5px);
+ backdrop-filter: blur(5px);
+ border: 0.2 px solid rgba(209, 213, 219, 0.3);
+}
+
 
 .nav-dis {
     display: flex;
     justify-content: flex-end;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -81,7 +92,7 @@ h2 {
 
 h6 {
     font-size: 24px;
-    color: #0DCAF0;
+    color: #ffffff;
     font-weight: bold;
     font-style: oblique;
 }

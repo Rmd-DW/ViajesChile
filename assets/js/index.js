@@ -1,6 +1,7 @@
 // Validación formulario con JavaScript
 
 document.addEventListener("DOMContentLoaded", function () {
+
     // Configuración de Bootstrap Tooltips
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
 
-    // Manejo del evento submit del formulario de contacto
+    // Manejo del evento submit del formulario de contacto al validar el que se llenen los campos 
    
     document.getElementById("fcontacto").addEventListener("submit", function(event) {
         event.preventDefault();
