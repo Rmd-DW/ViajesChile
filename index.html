@@ -54,7 +54,7 @@
         </div>
     </nav>
 
- <!-- Header -->
+    <!-- Header -->
     <header id="inicio" class="container-fluid m-0 p-0">
         <!-- Carrusel de imágenes destacadas / utilización bootstrap -->
         <div id="carouselDestacados" class="carousel slide mb-5" data-bs-ride="carousel">
@@ -84,7 +84,7 @@
 
 
     <main class="container-fluid bg-primary">
-   <!-- Una sección de Presentación. -->
+        <!-- Una sección de Presentación. -->
         <section id="presentacion" class="container section-presentacion d-none d-md-block">
             <!-- Una sección de presentación, utilizando favicons y 3 párrafos (debe desaparecer en
             tamaños pequeños de pantalla). -->
@@ -94,112 +94,208 @@
 
             <div class="container ">
                 <div class="row">
-                    <div class="col  section-presentacion-content">
-                        <i class="fa-solid fa-plane"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, culpa doloribus quo aliquid
-                            id iure non quis quisquam sint facere sequi, laudantium inventore. Laudantium maxime
-                            laboriosam,
-                            inventore accusantium facilis reprehenderit?</p>
+                    <!-- col img -->
+                    <div class="col  section-presentacion-content  p-3 col-sm-12 col-md-8 col-lg-6">
+                        <img class="img-fluid rounded" src="./assets/img/quienes-somos.jpg">
                     </div>
-                    <div class="col section-presentacion-content">
-                        <i class="fa-solid fa-mountain"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, culpa doloribus quo aliquid
-                            id iure non quis quisquam sint facere sequi, laudantium inventore. Laudantium maxime
-                            laboriosam,
-                            inventore accusantium facilis reprehenderit?</p>
-                    </div>
-                    <div class="col section-presentacion-content">
-                        <i class="fa-solid fa-route"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, culpa doloribus quo aliquid
-                            id iure non quis quisquam sint facere sequi, laudantium inventore. Laudantium maxime
-                            laboriosam,
-                            inventore accusantium facilis reprehenderit?</p>
+                    <!-- col presentacion -->
+                    <div class="col section-presentacion-content p-3 col-sm-12 col-md-8 col-lg-6">
+                        <p class="fs-5 text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                            eveniet blanditiis possimus officia totam molestiae assumenda sapiente, iure minus libero,
+                            asperiores laboriosam! Exercitationem facilis ratione illum, error architecto accusantium
+                            laborum?</p>
+                        <br>
+                        <p class="fs-5 text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                            voluptas unde officiis quos dignissimos eveniet, sunt, tenetur assumenda libero sapiente
+                            magnam ullam quis? Magnam, alias perspiciatis corrupti aspernatur temporibus maxime.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-    
+
         <!-- Una sección de Destacados. -->
         <section id="destacados" class="section-destacados mt-5">
             <div class="container-fluid">
-                <h2 class="text-center mb-5">Destacados</h2>
-                <!-- grilla de cards destacadas/ utilización bootstrap -->
-                <div class="row  g-1">
-                    <div class="col mb-4">
-                        <div class="card ">
-                            <img src="./assets/img/card1.jpg" class="card-img-top" alt="tarjeta chile">
-                            <div class="card-body ">
-                                <h5 class="card-title">Título de la tarjeta 1</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="container">
+                    <h2 class="text-center text-white mb-5">Destacados</h2>
+                </div>
+    
+                <div class="row  g-3">
+
+                    <div class="col-sm-12 col-md-8 col-lg-6 d-flex  justify-content-center">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./assets/img/card1.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Región de los lagos</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class=" d-flex  bg-light">
+                                    <i class="fa-solid fa-plane tex-primary p-1"></i>
+                                    <p class="card-text p-1"><small class="text-body-secondary">Vuelos desde:</small></p>
+                                    <p class="card-text p-1">$259.990</p>
+                                  </div>                                </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card ">
-                            <img src="./assets/img/card2.jpg" class="card-img-top" alt="tarjeta chile">
-                            <div class="card-body">
-                                <h5 class="card-title">Título de la tarjeta 2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+                    <div class="col-sm-12 col-md-8 col-lg-6 d-flex  justify-content-center">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./assets/img/card2.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Desierto de atacama</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class=" d-flex  bg-light">
+                                    <i class="fa-solid fa-plane tex-primary p-1"></i>
+                                    <p class="card-text p-1"><small class="text-body-secondary">Vuelos desde:</small></p>
+                                    <p class="card-text p-1">$259.990</p>
+                                  </div>                                </div>
+                              </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card ">
-                            <img src="./assets/img/card3.jpg" class="card-img-top" alt="tarjeta chile">
-                            <div class="card-body">
-                                <h5 class="card-title">Título de la tarjeta 3</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./assets/img/card4.jpg" class="card-img-top" alt="tarjeta chile">
-                            <div class="card-body">
-                                <h5 class="card-title">Título de la tarjeta 4</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
+                <div class="row justify-content-center g-3">
+
+                    <div class="col-sm-12 col-md-8 col-lg-6 d-flex  justify-content-center">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./assets/img/card3.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Norte grande de Chile</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class=" d-flex  bg-light">
+                                    <i class="fa-solid fa-plane tex-primary p-1"></i>
+                                    <p class="card-text p-1"><small class="text-body-secondary">Vuelos desde:</small></p>
+                                    <p class="card-text p-1">$259.990</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+            
+                    <div class="col-sm-12 col-md-8 col-lg-6 d-flex  justify-content-center">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./assets/img/card4.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bosque Magico</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class=" d-flex  bg-light">
+                                    <i class="fa-solid fa-plane tex-primary p-1"></i>
+                                    <p class="card-text p-1"><small class="text-body-secondary">Vuelos desde:</small></p>
+                                    <p class="card-text p-1">$259.990</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            
+        
             </div>
+            
         </section>
+
+      <section id="testimonios">
+        <div class="container mt-5 pt-5">
+            <h2 class="text-center text-white mb-5">Testimonios</h2>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="col-lg-4 col-md-12 text-center">
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti delectus quos totam tenetur optio dolor ducimus fugit, eligendi ullam architecto maiores excepturi alias aliquid, temporibus itaque cumque officiis odit!</p>
+                    <img src="./assets/img/testimonio1.jpg" alt="Testimonio 1" class="rounded-circle" width="75" height="75">
+                    <h4 class="text-center text-white mb-5">Mariela</h4>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti delectus quos totam tenetur optio dolor ducimus fugit, eligendi ullam architecto maiores excepturi alias aliquid, temporibus itaque cumque officiis odit!</p>
+                    <img src="./assets/img/testimonio2.jpg" alt="Testimonio 2" class="rounded-circle" width="75" height="75">
+                    <h4 class="text-center text-white mb-5">Christian</h4>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti delectus quos totam tenetur optio dolor ducimus fugit, eligendi ullam architecto maiores excepturi alias aliquid, temporibus itaque cumque officiis odit!</p>
+                    <img src="./assets/img/testimonio3.jpg" alt="Testimonio 3" class="rounded-circle" width="75" height="75">
+                    <h4 class="text-center text-white mb-5">Fernanda</h4>
+                </div>
+            </div>
+        </div>
+        
+
+      </section>
+
 
         <!--  Sección de formulario de contacto. -->
-        <section id="contacto" class="section-contacto">
-            
-            <div>
-                <h2>Contacto</h2>
+        <section id="contacto" class="section-contacto  text-white py-5 my-5">
+            <div class="container ">
+                <h2 class="text-center mb-5">Contacto</h2>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <!-- Formulario de contacto -->
+                        <form id="fcontacto" action="" class="g-3">
+                            <div class="mb-3">
+                                <label for="inombre" class="form-label">Nombre</label>
+                                <input id="inombre" name="nombre" class="form-control" data-bs-toggle="tooltip" data-bs-placement="top" title="Ingrese nombre" type="text" required>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="iasunto" class="form-label">Asunto</label>
+                                <input id="iasunto" name="asunto" class="form-control" data-bs-toggle="tooltip" data-bs-placement="top" title="Ingrese asunto" type="text" required>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="imensaje" class="form-label">Mensaje</label>
+                                <textarea id="imensaje" name="mensaje" class="form-control" data-bs-toggle="tooltip" data-bs-placement="top" title="Ingrese el mensaje" rows="5" required></textarea>
+                            </div>
+        
+                            <div class="text-left">
+                                <button id="enviarCorreo" type="submit" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar tu correo">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6  col-md-8  col-sm-12 p-5 ">
+                        
+                        <div class="d-flex p-2 m-2 mb-3 ">
+                          <i class="fa-solid fa-phone text-white fs-3 mx-2"></i>
+                          <p class="h5 text-white mx-2">+56939122430</p>
+                        </div>
+                        <div class="d-flex p-2 m-2 mb-3">
+                          <i class="fa-solid fa-envelope text-white fs-3 mx-2"></i>
+                          <p class="h5 text-white mx-2">contacto@viajeschile.com</p>
+                        </div>
+                        <div class="d-flex p-2 m-2 mb-3">
+                          <i class="fa-brands fa-linkedin text-white fs-3 mx-2"></i>
+                          <p class="h5 text-white mx-2">Viajes_chile</p>
+                        </div>
+                        <div class="d-flex p-2 m-2 mb-3 ">
+                          <i class="fa-brands fa-square-instagram text-white fs-3 mx-2"></i>
+                          <p class="h5 text-white mx-2">Viajes_chile</p>
+                        </div>
+                      </div>
+                </div>
             </div>
 
-
-            <div>
-                <!-- formulario de contacto -->
-                <form id="fcontacto" action="">
-                    <label>Nombre</label>
-                    <input id="inombre" class="p-toggle" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Ingrese nombre" type="text">
-
-                    <label>Asunto</label>
-                    <input id="iasunto" class="p-toggle" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Ingrese asunto" type="text">
-
-                    <label>Mensaje</label>
-                    <textarea id="imensaje" class="p-toggle" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Ingrese el mensaje" cols="30" rows="10"></textarea>
-
-                    <button id="enviarCorreo" type="submit" class="btn btn-outline-secondary m-2"
-                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Presiona para enviar tu correo">Enviar</button>
-                </form>
-
-            </div>
+           
         </section>
+        
+
     </main>
 
     <footer>
